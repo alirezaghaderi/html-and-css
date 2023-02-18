@@ -1,0 +1,881 @@
+@font-face {
+    font-family:prc-Aviny;
+    src: url(../fonts/Aviny.woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+html{
+    scroll-behavior:smooth ;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+ul{
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+li{
+    display: inline;
+}
+figure{
+    margin: 0;
+    padding:0;
+}
+p{
+    margin:0;
+    padding: 0;
+    font-family: prc-Aviny;
+}
+.prc-red{
+    color: red;
+}
+.prc-green{
+    color: green;
+}
+.prc-orange{
+    color: orange;
+}
+.prc-blue{
+    color: blue;
+}
+::placeholder{
+    font-size: 21px;
+    font-family: prc-Aviny;
+    color: cadetblue;
+}
+/*این قسمت برای کد نویسی هدر میباشد*/
+.prc-header{
+    width: 100%;
+    height: 950px;
+    float: right;
+    background-image: url(../images/background-header.png);
+background-repeat: no-repeat;
+background-position: center;
+position: relative;
+background-size: 100% 100%;
+}
+.prc-container{
+    width: 100%;
+    height: inherit;
+    float: right;
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+.prc-top-header{
+    width: 100%;
+    height: auto;
+    float: right;
+    padding: 10px 0px;
+    border-bottom: 1px solid rgb(10, 10, 10);
+}
+.prc-top-header .prc-top-header-right{
+    width: 50%;
+    height: auto;
+    float: right;
+    display: inline;
+}
+.prc-top-header .prc-top-header-left{
+    width: 50%;
+    height: auto;
+    float: left;
+    display: inline;
+}
+.prc-top-header-right a .fa-comment-alt{
+margin-left: 10px;
+}
+.prc-top-header-right .prc-top-right-a{
+    border-left:1px solid rgb(216, 204, 204) ;
+padding-left: 20px;
+font-size: 16px;
+color: black;
+margin-right: 0px;
+}
+.prc-top-header-right-ul{
+    margin-right: 20px; 
+}
+.prc-top-header-right-ul li i {
+    margin-left: 10px;
+    color: black;
+}
+.prc-top-heder-left-ul{
+    float: right;
+    width: 100%;
+    height: auto;
+    text-align:left ;
+}
+.prc-top-heder-left-ul  li{
+    margin-left: 0px;
+        font-size: 17px;
+}
+.prc-top-heder-left-ul  li a{
+    color: rgb(255, 255, 255);
+}
+.prc-top-heder-left-ul  li a i{
+margin-left: 15px;
+color: rgb(255, 255, 255);
+}
+.prc-center-header{
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: 15px;
+}
+.prc-header-logo{
+    width: 20%;
+    height: auto;
+    float: right;
+}
+.prc-center-header-main-menu{
+    width:80%;
+    height: auto;
+    float: right;
+}
+.prc-center-header-main-menu .prc-center-header-ul-main-menu{
+    width: 130%;
+    height: auto;
+    float: right;
+    padding-right: 200px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.prc-center-header-ul-main-menu li{
+    margin-left: 10px;
+    position: relative;
+}
+.prc-center-header-ul-main-menu li a{
+    color: #fff;
+}
+.prc-center-header-ul-main-menu li:hover a{
+    color:orange;
+   padding: 10px 0 ;
+}
+.prc-center-header-child-menu{
+ visibility: hidden;
+ opacity: 0;
+ position: absolute;
+ width: 150%;
+ top: 30px;
+ right: 0;
+ background:#fff;
+ padding: 10px;
+ border-radius: 10px;
+ box-shadow: 5px 5px 5px #0d2c59;
+transition-duration: 2s;
+}
+.prc-center-header-child-menu li a{
+    color:black !important;
+}
+.prc-center-header-child-menu li{
+    display: block;
+    padding: 6px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.prc-center-header-child-menu li:hover a{
+    color:orange !important;
+}
+.prc-center-header-ul-main-menu li:hover .prc-center-header-child-menu{
+    visibility: visible;
+    opacity: 1;
+}
+.prc-center-menu-childmenu-li{
+    background:linear-gradient(to right,red ,yellow);
+    padding: 5px 0px;
+    border-radius: 5px;
+}
+.prc-center-menu-childmenu-li a i{
+    margin-left: 5px;
+    font-size: 10px;
+}
+.prc-center-menu-childmenu-li a{
+    transition-duration: 2s;
+}
+.prc-center-menu-childmenu-li:hover a{
+    color: rgb(10, 10, 10) !important;
+    transition-duration: 2s;
+}
+.prc-header-content-right{
+    width: 100%;
+    height: auto;
+    float: right; 
+    margin-top: 35px;
+}
+.prc-header-content-right-p{
+    color: #ff6a00;
+    font-size: 25px;
+    font-family: prc-Aviny;
+}
+.prc-header-content-right-p2{
+    font-size: 50px; 
+    color:#34416b;
+    font-family: prc-Aviny;
+    line-height: 45px;
+    font-weight: bold;
+}
+.prc-header-content-right-p3{
+font-size: 15px;
+margin-top: 15px;
+line-height:20px;
+color:#34416b;
+font-family: prc-Aviny;
+font-size: 20px;
+}
+.prc-header-search-form{
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: 25px;
+}
+.prc-header-search-form form{
+    width: 65%;
+    height: auto;
+    float: right;
+    position: relative;
+}
+.prc-header-search-form form input{
+    width:100%;
+    height: 1px;
+    padding: 15px 20px;
+    box-shadow: opx 0px 20px 7px rgb(19, 12, 12);
+    border-radius:25px ;
+    box-sizing: border-box;
+}
+.prc-header-search-form form .fa-search{
+    position:absolute;
+    left: 4px;
+    background:#3f83f6;
+    color: #fff;
+    padding: 10px;
+    font-size: 8px;
+    border-radius: 25px;
+    top: 3px;
+}
+.prc-header-search-form form .fa-angle-double-right{
+    position:absolute;
+    left: 35px;
+    background:#0b7e1e;
+    color: #fff;
+    padding: 10px;
+    font-size: 9px;
+    border-radius: 25px;
+    top: 2px;
+}
+.prc-box-center-header{
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: 35px;
+}
+.prc-box-article-center-header{
+    width: 83px;
+    height:70;
+    float: right;
+    padding: 20px 25px;
+    box-shadow: 1px 1px 20px 7px #e8e8e8 ;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+.prc-box-article-center-header .prc-domain-name-box-content-header{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: darkcyan;
+    transition-duration: 1s;
+}
+.prc-box-article-center-header .prc-price-domain-box-center-header{
+text-align: center;
+padding-top: 8px;
+font-size: 20px;
+transition-duration: 1s;
+}
+.prc-box-article-center-header:hover{
+    background-color: rgb(86, 22, 216);
+    transition-duration: 1s;
+}
+.prc-box-article-center-header:hover .prc-price-domain-box-center-header{
+    color: #fff;
+    transition-duration: 1s;
+}
+.prc-box-article-center-header:hover .prc-domain-name-box-content-header{
+    color: rgb(248, 152, 7);
+    transition-duration: 1s;
+}
+/*پایان کدنویسی بخش هدر */
+/*شروع کدنویسی بخش برئ به بالا*/
+.fa-angle-double-up{
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
+    padding: 13px 15px;
+    background-color: red;
+    color: #fff;
+    border-radius: 25px;
+    margin-left: 65px;
+}
+/*پایان کدنویسی بخش برو به بالا*/
+/*شروع کدنویسی بخش پایین هدر وبسایت*/
+.prc-content-one{
+    width: 100%;
+    height: 600px;
+    float: right;
+    background-image:url(../images/bg-content-one.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.prc-content-one .prc-container .prc-content-one-right{
+    width: 60%;
+    height: auto;
+    float: right;
+}
+.prc-content-one .prc-container .prc-content-one-left{
+    width: 40%;
+    height: auto;
+    float: left;
+}
+.prc-content-one-left-box{
+    width: 100%;
+    height: auto;
+    float:right;
+    margin-top: 150px;
+}
+.prc-content-one-left-box-p{
+    font-size: 30px;
+    color: orange;
+    font-weight: bold;
+}
+.prc-content-one-left-box-title{
+    font-size: 40px;
+    color: rgb(33, 11, 131);
+    font-weight: bold;
+}
+.prc-content-one-left-box-content{
+    font-size: 23px;
+    line-height: 25px;
+}
+.prc-content-one-left-box-content-a{
+    background-image: linear-gradient(to right, #ff005e , #550fff);
+    color: #fff;
+    padding: 20px 30px;
+    float: right;
+    border-radius: 35px;
+    margin-top: 35px;
+    font-size: 11px;
+}
+.prc-content-one-right .prc-content-box-right{
+    width: 30%;
+    height: auto;
+    float: right;
+    display: inline;
+}
+.prc-content-one-right .prc-content-box-left{
+    width: 70%;
+    height: auto;
+    float:left;
+    display: inline;
+    margin-top: 30px;
+}
+.prc-box-content-right{
+    width:140px;
+    height: auto;
+    padding: 30px 25px;
+    box-shadow:0 0 15px 5px #e0dcdc ;
+    border-radius: 30px;
+    background-color:#fff ;
+    margin-bottom: 20px;
+}
+.prc-box-content-right:hover{
+    background-image: linear-gradient(to right, #ff005e , #550fff);
+}
+.prc-box-content-right:hover p{
+    color: #fff;
+}
+.prc-box-content-right figure img{
+    margin: 0 auto;
+    display: table;
+    margin-bottom:20px ;
+}
+.prc-content-right-title{
+    text-align: center;
+    font-size: 25px;
+}
+.prc-box-content-right-content{
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+}
+/*پایان کدنویسی قسمت پایین هدر وبسایت*/
+/*شروع کدنویسی بخش لیست قیمت ها */
+.prc-list-price{
+    width: 100%;
+    height:auto;
+    float: right;
+    background-image: url(../images/pic-list-price.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    padding-bottom: 40px;
+}
+.prc-list-price-title{
+    text-align: center;
+    font-size: 35px;
+    color: #ffb000;
+}
+.prc-list-price-title2{
+    text-align: center;
+    font-size: 35px;
+    color: #218799;
+    font-weight: bold;
+}
+.prc-list-price-title3{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(6, 51, 53);
+}
+.prc-list-price-box{
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.prc-box-list-price{
+    width: 80%;
+    height: auto;
+    float: right;
+    padding: 20px 60px;
+    background:white;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px 11px #dedede;
+    border-radius: 30px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+.prc-box-list-price .prc-box-list-price-content{
+    width: 50%;
+    height: auto;
+    float: right;
+}
+.prc-box-list-price .prc-box-list-price-images figure{
+    width: 100%;
+    height: auto;
+    float: right;
+}
+.prc-box-list-price .prc-box-list-price-images{
+    width: 50%;
+    height: auto;
+    float:left;
+}
+.prc-box-list-price-images figure img{
+    width: 100%;
+    float: left;
+}
+.prc-box-list-price-content-title{
+    font-size: 29px;
+    font-weight: 600;
+    color: #184eae;
+    margin-bottom: 10px;
+}
+.prc-box-list-price-content-title2{
+font-size: 20px;
+color: #000000;
+margin-bottom: 15px;
+}
+.prc-box-list-price-content-title-price{
+    font-size: 25px;
+    color: #184eae;
+}
+.prc-box-list-price-content-price{
+    font-size: 30px;
+    color: #4a00ff;
+}
+.prc-box-list-price-content a{
+    padding: 10px 40px;
+    border: 1px solid #ddd;
+    float: right;
+    border-radius: 30px;
+    font-family: Aviny;
+}
+.prc-box-list-price .prc-box-list-price-content2{
+    width: 50%;
+    height: auto;
+    float: left;
+}
+.prc-box-list-price .prc-box-list-price-images2 figure img{
+    width: 40%;
+    height: auto;
+    float:right;
+    padding: 50px 0px;
+}
+.prc-box-list-price-content2 a{
+    padding: 10px 40px;
+    border: 1px solid #ddd;
+    float: right;
+    border-radius: 30px;
+    font-family: Aviny;
+}
+.prc-see-all-plan{
+    margin: 0 auto;
+    display: table;
+    border: 1px solid #ddd;
+    padding: 8px 30px;
+    font-size: 25px;
+    color: #862eab;
+    border-radius: 35px;
+    font-family: prc-Aviny;
+}
+.prc-see-all-plan .fa-angle-double-right{
+margin-right:8px ;
+color:#2b62c9;
+font-size: 15px;
+}
+/*پایان کدنویسی بخش لیست قیمت ها */
+/*شروع کدنویسی بخش به ما بپیوندید*/
+.prc-register{
+    width: 100%;
+    height: 650px;
+    float: right;
+    background-image: url(../images/bg-register.png);
+position: relative;
+
+}
+.prc-register-box{
+    width: 100%;
+    height:auto;
+    float: right;
+    margin-top: 200px;
+}
+.prc-register-box .prc-title1-register-box{
+text-align: center;
+font-size: 33px;
+color: orange;
+}
+.prc-title2-register-box{
+    text-align: center;
+font-size: 40px;
+line-height: 50px;
+color: #fff;
+}
+.prc-register-box a{
+    margin: 0 auto;
+    display: table;
+    margin-top: 15px;
+    background-image: linear-gradient(to right,#ff005e ,#550fff);
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 35px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.prc-register-box img{
+    position: absolute;
+    top: 0;
+    width: 150px;
+    padding: 80px;
+    animation: wppush-rocket 0.5s linear 1s infinite;
+}
+@keyframes wppush-rocket{
+    0%{
+        transform: translate3d(0px, 0px, 0px);
+    }
+    50%{  transform: translate3d(0px, -10px, 0px);
+    }
+    100%{  transform: translate3d(0px, 0px, 0px);
+    }
+}
+/* پایان کدنویسی بخش به ما بپیوندید*/
+/*شروع کدنویسی بخش همه دپلن ها*/
+.prc-all-plan{
+    width: 100%;
+    height: 750px;
+   padding: 100px 0 50px 0;
+    float: right;
+    background-image: url(../images/bg-all-plan.png);
+    background-repeat: no-repeat;
+    background-position:top;
+}
+.prc-all-plan p{
+    text-align: center;
+    line-height: 40px;
+}
+.prc-all-plan .prc-all-plan-title-1{
+
+font-size: 35px;
+color: orange;
+}
+.prc-all-plan .prc-all-plan-title-2{
+    font-size: 35px;
+    color: #1c58a2;
+}
+.prc-all-plan .prc-all-plan-title-3{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.prc-box-all-plan{
+    width:60%;
+    height: auto;
+    float: right;
+    margin-top: 40px;
+}
+.prc-box-all-plan-one{
+    width: 320px;
+    height: auto;
+    padding: 20px 30px;
+    float: right;
+    border: 1px solid #ddd;
+    border-right: 8px solid #ddd;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.prc-box-all-plan p{
+    text-align: right;
+    line-height: 30px;
+}
+.prc-box-all-plan-one-title1{
+    font-size: 27px;
+    color: rgb(182, 4, 167);
+    font-weight: bold;
+}
+.prc-box-all-plan-one-title2{
+    font-size: 20px;
+}
+.prc-box-all-plan-one:hover{
+box-shadow: 0px 0px 20px #c2c2c2;
+border-right:8px solid #0179cd ;
+}
+/* پایان کدنویسی بخش همه دپلن ها*/
+/* شروع  کدنویسی بخش همه ویژگی ها*/
+.prc-property{
+    width: 100%;
+    height: 950px;
+    float: right;
+    background-image: url(../images/bg-property.png);
+    background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.prc-box-property{
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: 80px;
+}
+.prc-box-property p{
+    text-align: center;
+}
+.prc-box-property-title1{
+    font-size: 40px;
+    color: orange;
+}
+.prc-box-property-title2{
+    font-size: 40px;
+    color:#fff;
+}
+.prc-box-property-title3{
+    font-size: 22px;
+    color:#fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.prc-box-property-article{
+    width: 45%;
+    height: auto;
+    float: right;
+    margin-top: 50px;
+}
+.prc-box-property-article-one{
+    width:100%;
+    height: auto;
+    float: right;
+    padding: 15px;
+  border: 1px solid #d8d8d8;
+  box-sizing: border-box;
+  margin-right: 60px;
+  font-size: 18px;
+  font-family: prc-Aviny;
+  border-radius: 25px;
+  background: #2196f333;
+  margin-bottom: 15px;
+}
+.prc-box-property-article-img{
+    width:40%;
+    height: auto;
+    float: right;
+}
+.prc-box-property-article-content{
+    width:60%;
+    height: auto;
+    float: right;
+}
+.prc-box-property-article-img figure img{
+    margin: 0 auto;
+    display: table;
+    margin-top: 5px;
+}
+.prc-box-property-article-content-title{
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+.prc-box-property-article-all-content{
+    color: #fff;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: justify;
+}
+/* شروع  کدنویسی بخش همه ویژگی ها*/
+/* شروع  کدنویسی بخش مشاوره*/
+.prc-moshavere{
+    width: 100%;
+    height: auto;
+    float: right;
+    padding: 150px;
+}
+.prc-right-img-moshavere{
+    width: 30%;
+    height: auto;
+    float: right;
+}
+.prc-right-text-moshavere{
+    width: 70%;
+    height: auto;
+    float:left;
+}
+.prc-content-moshavere{
+    width: 100%;
+    height: auto;
+    float: right;
+    padding: 0 35px;
+}
+.prc-content-moshavere .prc-p1-content-moshavere{
+font-size: 33px;
+color: orange;
+}
+.prc-content-moshavere .prc-p2-content-moshavere{
+font-size: 45px;
+color:#0f34a9;
+}
+.prc-content-moshavere .prc-p3-content-moshavere{
+    font-size: 22px;
+    }
+    .prc-box-moshavere{
+        width: 100%;
+        height: auto;
+        float: right;
+        margin-right: 30px;
+        margin-top: 30px;
+    }
+    .prc-box-article-moshavere{
+        width: 280px;
+        display: inline;
+        float: right;
+        box-shadow: 0px 0px 8px 5px #f4f4f4;
+        padding: 15px;
+    }
+.prc-box-article-moshavere2{
+    width: 270px;
+    display: inline;
+    float: right;
+   box-shadow: 0px 0px 8px 5px #f4f4f4;
+    padding: 15px;
+    margin-right: 10px;
+}
+.prc-box-article-moshavere-pic{
+    width: 30%;
+    height: auto;
+    float:right;
+}
+.prc-box-article-moshavere-content{
+    width: 70%;
+    height: auto;
+    float:right;
+}
+.prc-box-article-moshavere-content-p1{
+font-size: 28px;
+font-weight: 700;
+color: #568bce;
+}
+.prc-box-article-moshavere-content-p2{
+    font-size: 20px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+/* پایان  کدنویسی بخش مشاوره*/
+/*شروع کدنویسی بخش فوتر*/
+.prc-main-footer{
+    width: 100%;
+    height: 950px;
+    float: right;
+    background: url(../images/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: 300%;
+}
+.prc-content-top-footer{
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: 300px;
+}
+.prc-content-top-footer .prc-content-p-top-footer{
+    width: 70%;
+    height: auto;
+    float: right;
+}
+.prc-content-top-footer .prc-content-a-top-footer{
+    width: 30%;
+    height: auto;
+    float: right;
+}
+.prc-content-p-top-footer p ,.prc-content-p-top-footer a{
+    color: #fff;
+}
+.prc-content-p1-top-footer{
+    font-size: 30px;
+    line-height: 50px;
+}
+.prc-content-p2-top-footer{
+    font-size: 18px;
+}
+.prc-content-a-top-footer a{
+    background:red;
+    padding: 20px;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 18px;
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+}
+.prc-content-ul-footer{
+    width: 100%;
+    height: auto;
+    float: right;
+    padding: 50px 0px;
+}
+.prc-logo-footer{
+    width: 40%;
+    height: auto;
+    float: right;
+}
+.prc-ul-li1-footer ,.prc-ul-li2-footer ,.prc-ul-li3-footer{
+    width: 20%;
+    height: auto;
+    float: right;
+}
+.prc-logo-footer p{
+    font-size: 25px;
+    color: #fff;
+    line-height: 25px;
+}
+.prc-logo-footer span{
+    color: coral;
+}
+.prc-logo-footer figure img{
+    margin-bottom: 15px;
+}
+/*پایان  کدنویسی بخش فوتر*/
